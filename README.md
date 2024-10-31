@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Selenium Testing with Pytest
 
 ## Mô tả
@@ -13,7 +14,7 @@ Dự án này sử dụng Selenium và Pytest để tự động hóa các bài 
 1. **Cài đặt Python**: Đảm bảo rằng Python đã được cài đặt trên máy tính của bạn.
 2. **Cài đặt các thư viện cần thiết**:
    ```pip install pytest selenium
-3. Cài đặt WebDriver cho Microsoft Edge: Tải và cài đặt Microsoft Edge WebDriver từ trang tải xuống WebDriver.
+3. **Cài đặt WebDriver cho Microsoft Edge**: Tải và cài đặt Microsoft Edge WebDriver từ trang tải xuống WebDriver.
 
 ## Cách sử dụng
 1. Tải mã nguồn của dự án này về máy của bạn.
@@ -55,9 +56,3 @@ Kiểm tra khả năng đáp ứng của trang web với các kích thước c�
 
 ## Hỗ trợ
 Nếu bạn gặp vấn đề nào trong quá trình sử dụng hoặc có câu hỏi, vui lòng tạo một issue trên GitHub hoặc liên hệ trực tiếp với tôi.
-
-
-
-
-
-
