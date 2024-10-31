@@ -66,12 +66,16 @@ def test_form_submission(driver):
     driver.get("https://demo.opencart.com/en-gb?route=account/login")
     time.sleep(3)
     driver.find_element(By.NAME, "email").send_keys("hongphuc71233@gmail.com") # Nhập tài khoản
+    time.sleep(1)
     driver.find_element(By.NAME, "password").send_keys("xyz") # Nhập mật khẩu
-    driver.find_element(By.CSS_SELECTOR, "button.btn.btn-primary").click()
-    time.sleep(3)
+    time.sleep(1)
+    driver.find_element(By.XPATH, "//*[@id='form-login']/div[3]/button").click()
+    time.sleep(2)
+    
     # Kiểm tra thông báo sau khi gửi biểu mẫu
     message = driver.find_element(By.ID, "alert").text
     assert "Warning: No match for E-Mail Address and/or Password." in message
+
 
 # Navigation
 def test_navigation(driver):
@@ -156,7 +160,7 @@ def test_search_functionality(driver):
 def test_responsive_design(driver, size):
     driver.set_window_size(*size)
     driver.get("https://demo.opencart.com/")
-    
+
     time.sleep(5)
 
     element = driver.find_element(By.ID, "logo") # Kiểm tra tính hiển thị của logo
